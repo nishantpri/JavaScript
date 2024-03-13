@@ -64,3 +64,18 @@ console.log(Object.keys(tinderUser));// this will give output as Array
 console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 console.log(tinderUser.hasOwnProperty('id'));
+
+const course={
+    coursenam:"javascript",
+    courseprice :"999",
+    courseInstructor:"Hitesh"
+}
+
+// Example how Object destructuring is done in react 
+const {courseInstructor}=course// this will fetch course instructor name and even we can rename the using const{courseInstructor:Instructor}=course // this is also called destructing of object
+console.log(courseInstructor); 
+
+const navbar=({company})=>{
+
+}// thus we will have to write all the props.comapany rather doing that we will just write once company in the {} and hence we will not have to write same thing again and again
+//jason formator
